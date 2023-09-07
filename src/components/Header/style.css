@@ -1,0 +1,30 @@
+header.light-mode {
+  background-color: var(--background-color-ligth-menu-and-footer);
+}
+header.dark-mode {
+  background-color: var(--background-color-dark);
+}
+
+.header-menu {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-ligth-menu-and-footer);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}

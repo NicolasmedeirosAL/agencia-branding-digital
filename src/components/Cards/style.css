@@ -1,0 +1,56 @@
+#cards {
+  width: calc(100% / 3);
+  margin: 30px 0;
+  border: 1px solid #cccccc;
+  
+
+  transition: transform 0.1s ease;
+}
+
+#cards:hover {
+  transform: scale(1.05);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+#cards.light-mode:hover {
+  background-color: var(--light-color);
+}
+#cards.dark-mode:hover {
+  background-color: var(--dark-color);
+}
+
+.card {
+  padding: 30px 10px;
+  margin: 20px;
+  color: var(--paragraph-color-ligth);
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+.dark-mode h3 {
+  color: #fff;
+}
+.dark-mode p {
+  color: #fff;
+}
+.dark-mode span {
+  color: #fff;
+}
+
+
+@media screen and (max-width:768px) {
+  #cards {
+    flex-direction: column;
+    width: 100%;
+    margin:  20px;
+  }
+}
